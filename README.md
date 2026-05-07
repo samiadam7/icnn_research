@@ -27,5 +27,5 @@ notebooks/      — exploratory experiments
 Three strategies enforce W_z ≥ 0 (required for convexity):
 
 - **clip** — project onto non-negative orthant after each gradient step
-- **exp** — reparametrize W_z = exp(W̃_z); regularize W̃_z to prevent divergence
-- **softplus** — reparametrize W_z = softplus(W̃_z); `FICNNSoftplusShifted` initializes W̃_z at −2 for better expressivity early in training
+- **exp** — reparametrize W_z = exp(W_z); regularize W_z to prevent divergence
+- **softplus** — reparametrize W_z = softplus(W_z); `FICNNSoftplusShifted` initializes W_z at −2 for better expressivity early in training
